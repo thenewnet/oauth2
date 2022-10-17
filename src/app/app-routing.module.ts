@@ -31,6 +31,13 @@ const routes: Routes = [
       import('./_module/callback/callback.module').then(
         (m) => m.CallbackModule
       ),
+  },
+  {
+    path: 'logout_successful',
+    loadChildren: () =>
+      import('./_module/logout/logout.module').then(
+        (m) => m.LogoutModule
+      ),
   }
 ];
 
